@@ -14,7 +14,7 @@ function Hero() {
       <h2>FRONTEND DEVELOPER</h2>
       <p>Turning ideas into clean, modern, and responsive websites.</p>
       <div className="hero-action">
-        <a href="/resume.pdf" download="Dhiraj_Mehta_Resume.pdf">
+        <a href="/CV-dhiraj-mehta.pdf" download="Dhiraj_Mehta_Resume.pdf">
         <button className="hero-button hero-btn">Download Resume</button>
         </a>
       </div>
