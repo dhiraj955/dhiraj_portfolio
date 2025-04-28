@@ -1,0 +1,134 @@
+.about-left img {
+  height: 450px;
+  height: 450px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 80%;
+  margin: 80px auto;
+}
+.about-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+.about-section {
+  display: flex;
+  gap: 80px;
+}
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-skill {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  transition: 0.3s;
+}
+.about-skill p {
+  min-width: 150px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.about-skill hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 8px;
+  border-radius: 50px;
+  background: #136aa3;
+}
+.about-achievements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.about-achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+}
+.about-achievement h1 {
+  color: #136aa3;
+  font-size: 60px;
+  font-weight: 600;
+}
+.about-achievement p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-achievement:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.about-skill:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+@media screen and (max-width: 480px) {
+  .about {
+    width: 100vh;
+    padding: 0 20px;
+  }
+  .about-title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-left img {
+    width: 400px;
+    height: auto;
+  }
+
+  .about-para {
+    font-size: 1.9rem;
+  }
+
+  .about-skills {
+    margin-top: 15px;
+  }
+
+  .about-skill p {
+    font-size: 1.9rem;
+    min-width: 200px;
+  }
+
+  .about-skill hr {
+    width: 50%;
+  }
+
+  .about-achievements {
+    align-items: center;
+  }
+
+  .about-achievement p {
+    font-size: 1.5rem;
+  }
+}

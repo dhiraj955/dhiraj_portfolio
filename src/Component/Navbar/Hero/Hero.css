@@ -1,0 +1,77 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4)),
+    url("/dhiraj.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.hero h1 {
+  text-align: center;
+  width: 30%;
+  font-size: 3.5rem;
+}
+.hero h1 span {
+  color: #136aa3;
+}
+.hero h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: -20px;
+}
+.hero p {
+  width: 50%;
+  font-size: 24px;
+  text-align: center;
+  margin: -20px 0;
+}
+.hero-button {
+  margin: 10px 20px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #136aa3;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 100vh;
+    padding: 0 10px;
+  }
+
+  .hero h1 {
+    width: 70%;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .hero-button {
+    font-size: 1.9rem;
+    width: 450px;
+    margin: 0 50px;
+  }
+}

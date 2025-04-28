@@ -1,0 +1,26 @@
+.footer {
+  background-color: #f8fafc; /* Light background */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-text {
+  color: #334155; /* Dark gray */
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-text:hover {
+  color: #1e293b; /* Slightly darker on hover */
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    width: 100vh;
+    padding: 10px 20px;
+  }
+  .footer-text {
+    font-size: 1.9rem;
+  }
+}

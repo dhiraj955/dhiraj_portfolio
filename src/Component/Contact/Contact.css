@@ -1,0 +1,214 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 80%;
+  margin: 80px auto;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: -50px;
+}
+
+.contact-section {
+  display: flex;
+  gap: 170px;
+  width: 100%;
+  /* flex-wrap: wrap;  Ensures that content wraps on smaller screens */
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%; /* Make sure this takes up space in larger screens */
+  box-sizing: border-box; /* Ensure padding and margin don't cause overflow */
+}
+
+.contact-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #136aa3;
+}
+
+.contact-left p {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #333;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.contact-detail {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.contact-detail a{
+  color: #333;
+  font-size: 1.8rem;
+  
+  
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the button horizontally */
+  gap: 30px;
+  width: 50%; /* Ensure the right section doesn't overlap */
+  box-sizing: border-box; /* Ensure padding and margin don't cause overflow */
+}
+
+.contact-right label {
+  font-size: 1.2rem;
+  color: #136aa3;
+  font-weight: 500;
+}
+
+.contact-right input,
+.contact-right textarea {
+  border: none;
+  width: 650px;
+  height: 78px;
+  padding-left: 20px;
+  border-radius: 4px;
+  background: #e9e7e7;
+  color: #333;
+  font-size: 20px;
+}
+
+.contact-submit {
+  margin: 10px 0; /* Adjust margin for better spacing */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #136aa3;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-submit:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.label-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.submission-message {
+  font-size: 1.9rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%; /* Ensure both sections take full width on small screens */
+  }
+
+  .contact-left h1 {
+    font-size: 2rem;
+  }
+
+  .contact-left p {
+    font-size: 1rem;
+  }
+
+  .contact-details {
+    gap: 20px;
+  }
+
+  .contact-detail p {
+    font-size: 1rem;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    width: 100%; /* Full width for input fields */
+    font-size: 16px;
+    padding-left: 15px;
+  }
+
+  .contact-submit {
+    width: 100%; /* Full width for the submit button */
+    font-size: 16px;
+  }
+
+  .contact-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    width: 100vh;
+    padding: 0 20px;
+  }
+  .contact-detail a{
+    font-size: 2.5rem;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+  .contact-detail a:1st-child{
+    margin-left: 50px;
+  }
+  .contact-left,
+  .contact-right {
+    display: flex;
+    align-items: center;
+  }
+  .contact-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-left p,
+  .contact-detail p {
+    font-size: 1.9rem;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    width: 700px;
+    font-size: 14px;
+  }
+  .label-contact label {
+    font-size: 1.9rem;
+  }
+
+  /* Styling the placeholder text */
+  .label-contact textarea::placeholder {
+    font-size: 1.9rem; /* Match the font size of the textarea */
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    font-size: 1.9rem;
+    padding-left: 15px;
+  }
+  .contact-submit {
+    font-size: 1.9rem;
+    width: 85%;
+  }
+}

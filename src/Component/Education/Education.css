@@ -1,0 +1,149 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.education-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: -50px;
+}
+
+.education-content {
+  display: flex;
+  gap: 80px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-left,
+.education-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+}
+
+.education-left h2,
+.education-right h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  font-weight: normal;
+}
+
+.education-content hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 2px;
+  border-radius: 50px;
+  background: #136aa3;
+}
+
+.education-left p,
+.education-right p {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.para {
+  margin-bottom: 50px;
+}
+
+/* Mobile Responsiveness */
+/* @media screen and (max-width: 768px) {
+    .education {
+        width: 100vh
+       
+    }
+    .education-title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .education-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .education-left,
+    .education-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .education-left h2,
+    .education-right h2 {
+        font-size: 1rem;
+    }
+
+    .education-content hr {
+        width: 60%;
+    }
+
+    .education-left p,
+    .education-right p {
+        font-size: 0.9rem;
+    }
+
+    .para {
+        margin-bottom: 20px;
+    }
+} */
+
+@media screen and (max-width: 480px) {
+  .education {
+    width: 100vh;
+    padding: 0 20px;
+  }
+  .education-title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .education-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .education-left,
+  .education-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .education-left h2,
+  .education-right h2 {
+    font-size: 1.9rem;
+  }
+
+  .education-content hr {
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: 0 auto; /* This centers the <hr> horizontally */
+    border: none;
+    height: 2px; /* Adjust the height to your liking */
+    background-color: #136aa3; /* Set the color */
+  }
+
+  .education-left p,
+  .education-right p {
+    font-size: 1.8rem;
+  }
+
+  .para {
+    margin-bottom: 10px;
+  }
+}
