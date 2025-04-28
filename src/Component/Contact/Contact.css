@@ -160,6 +160,34 @@
     font-size: 1.2rem;
   }
 }
+@media (max-width: 768px) {
+     .contact-title{
+      font-size: 1rem;
+     }
+     .contact-left,
+  .contact-right {
+    display: flex;
+    align-items: center;
+  }
+  .contact-right input,
+  .contact-right textarea {
+    width: 600px;
+    font-size: 14px;
+  }
+  .label-contact label {
+    font-size: 1rem;
+  }
+  .contact-detail a{
+    font-size: 1.5rem;
+    margin-left: 20px;
+  }
+  .contact-right textarea::placeholder {
+    font-size: 1rem; 
+    padding-top: 10px;
+    
+  }
+
+}
 
 @media (max-width: 480px) {
   .contact {
