@@ -17,12 +17,12 @@ function Navbar() {
           <img src="/portfolio1.png" alt="Dhiraj" />
         </a>
 
-        {/* Toggle Button */}
+       
         <div className="menu-icon" onClick={toggleMenu}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </div>
 
-        {/* Menu Items */}
+        
         <ul className={isOpen ? "nav-menu active" : "nav-menu"}>
           <li>
             <Link
@@ -37,6 +37,7 @@ function Navbar() {
               Home
             </Link>
           </li>
+
           <li>
             <Link
               to="about"
@@ -65,6 +66,19 @@ function Navbar() {
           </li>
           <li>
             <Link
+              to="skill"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              activeClass="active"
+              onClick={toggleMenu}
+            >
+              Skill
+            </Link>
+          </li>
+          <li>
+            <Link
               to="contact"
               spy={true}
               smooth={true}
@@ -76,6 +90,7 @@ function Navbar() {
               Contact
             </Link>
           </li>
+         
         </ul>
       </div>
     </div>

@@ -1,8 +1,8 @@
 .navbar {
   position: fixed;
   width: 100%;
-  height: 80px;
-  background-color: #ffffff; /* White background */
+  height: 70px;
+  background-color: #ffffff; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,13 +42,19 @@
 }
 
 .active {
-  color: #136aa3; /* Sky blue when active */
+  color: #136aa3; 
   font-weight: bold;
 }
 .menu-icon {
   display: none;
   cursor: pointer;
   color: #334155;
+}
+.menu-icon svg{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  padding: 5px;
 }
 
 /* Mobile Responsive */
@@ -57,25 +63,24 @@
     width: 90%;
   }
 
+
   .menu-icon {
     display: block;
-    font-size: 1.9rem;
     color: #136aa3;
     border: 1px solid #136aa3;
     border-radius: 5px;
-    padding: 5px 10px;
+    
   }
 
   .nav-menu {
     position: absolute;
-    top: 75px;
+    top: 55px;
     width: 100%;
-
-    height: 50vh;
-    background: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
-    backdrop-filter: blur(10px); /* Blur effect */
+    height: 70vh;
+    background: rgba(255, 255, 255, 0.6);  
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    display: none; /* Hide by default */
+    display: none; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -89,24 +94,19 @@
 
   .nav-menu li {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
   }
 }
 
 @media screen and (max-width: 480px) {
   .navbar {
-    height: 110px;
+    height: 60px;
   }
   .navbar img {
-    height: 70px;
+    height: 40px;
     
   }
-  .menu-icon {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: bold;
-    
-  }
+  
 
   
 }

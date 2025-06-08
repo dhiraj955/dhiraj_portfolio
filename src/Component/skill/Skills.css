@@ -1,0 +1,91 @@
+/* Small Screens max width 640px */
+@media screen and (max-width: 640px) {
+    .skillsGrid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      grid-auto-rows: auto;
+      height: auto;
+      
+      
+    }
+  .skillsGrid img {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+  }
+  .skills{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 70vh;
+    margin-top: 50px;
+  }
+  .skills h2{
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+  }
+}
+
+  /* Medium Screens min width 641px change to 4 columns */
+@media screen and (min-width: 641px) {
+    .skillsGrid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      grid-auto-rows: auto;
+      height: auto;
+    }
+  .skillsGrid img {
+    height: 100px;
+    width: 100px;
+  }
+  .skills{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+
+  @media screen and (min-width: 1080px) {
+    .skillsGrid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 50px;
+        grid-auto-rows: auto;
+        height: auto
+      }
+    .skillsGrid img {
+      height: 150px;
+      width: 150px;
+    }
+    .skills{
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      margin-bottom: 50px;
+    }
+    .skills h2{
+      margin-bottom: 100px;
+    }
+
+  }
+    
+  
